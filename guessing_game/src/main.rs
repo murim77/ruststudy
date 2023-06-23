@@ -5,6 +5,11 @@ use std::cmp::Ordering;
 use rand::Rng;
 
 fn main() {
+
+    let x = plus_one(5);
+
+    println!("The value of x is: {}", x);
+
     println!("Guess the number!");
 
     let secret_number = rand::thread_rng().gen_range(1, 101);
@@ -33,4 +38,11 @@ fn main() {
             }
         }
     }
+
 }
+
+
+fn plus_one(x: i32) -> i32 {
+    x + 1
+}
+
